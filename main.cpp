@@ -23,13 +23,14 @@ private:
 	int x;
 };
 class Q:public A{
+	//
 public:
 	Q(int a1,int b1=0,int c1=0):A(a1,b1,c1){}
 	Q(char ao='!',char bo='*',int num1=0):A(ao,bo,num1){}
 	Q(Q& k){}
 	void pt(){cout<<*this<<endl;}
 };
-
+//
 template<typename fire>
 class B{
 private:int damage,length;
@@ -37,7 +38,8 @@ private:int damage,length;
 		int killnum,dienum;
 		fire user;
 		static int enc;
-		int oenc;
+		int oenc;//
+		//
 public:B(bool allow=0){damage=9;length=0;life=27;killnum=0;oenc=enc;enc++;dienum=0;if(1==allow){cin>>user;}}
 	   B(fire gname){damage=50;length=0;life=100;killnum=0;oenc=enc;enc++;dienum=0;user=gname;}
 	   static int showenc(){return enc;}
