@@ -1,3 +1,4 @@
+//i changed it at 2011/07/20   18:05
 #include<iostream>
 #include<string>
 #include<ctime>
